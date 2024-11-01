@@ -16,11 +16,11 @@ def main(args):
         use_pca=False,
         side="right",
         center_idx=None,
-        mano_assets_root="assets/mano",
+        mano_assets_root="/home/shaol/gjx/human-retargeting/3rdparty/manotorch/assets/mano",
         flat_hand_mean=False,
     )
-    axis_layer = AxisLayerFK(mano_assets_root="assets/mano")
-    anchor_layer = AnchorLayer(anchor_root="assets/anchor")
+    axis_layer = AxisLayerFK(mano_assets_root="/home/shaol/gjx/human-retargeting/3rdparty/manotorch/assets/mano")
+    anchor_layer = AnchorLayer(anchor_root="/home/shaol/gjx/human-retargeting/3rdparty/manotorch/assets/anchor")
 
     BS = 1
     random_shape = torch.rand(BS, 10)
